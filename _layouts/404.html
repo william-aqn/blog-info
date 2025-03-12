@@ -1,0 +1,19 @@
+---
+layout: hacker
+title: "Crimson.Lab / 404"
+description: "Лаборатория Кримсона - 404"
+---
+<div id="blog_post_list">
+    <p>Страница не существует, возможно переименована:</p>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a id="{{ post.id }}" href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.description }}
+            {% if post.tags %}
+            <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>

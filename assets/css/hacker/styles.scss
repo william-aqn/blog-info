@@ -1,0 +1,26 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$main-color: #E4C49F;
+header h1, h1, h2, h3, h4, h5, h6 {
+    color: $main-color;
+}
+header {
+    border-bottom:1px dashed $main-color;
+}
+hr {
+    border-bottom:1px dashed $main-color;
+    color: $main-color
+}
+
+#blog_posts > ul > li > a:first-of-type {
+    font-size: 30px;
+    color: $main-color;
+}
+#blog_posts > ul > li h1:first-of-type {
+    display: none;
+}
+
+  

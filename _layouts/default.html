@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " ru-RU" }}">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta name="language" content="russian" />
+  <meta http-equiv="content-type" content="text/html" />
+  <meta name="author" content="Dark Crimson" />
+  <meta name="designer" content="Dark Crimson" />
+  <meta name="publisher" content="Dark Crimson" />
+  <meta name="robots" content="index,follow" />
+
+  {% include favicon.html %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}" />
+
+  <script src="/assets/js/jquery.js"></script>
+  <script src="/assets/js/jquery-migrate-1.2.1.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="Блог.RSS" href="/feed.xml" />
+  <!--[if lt IE 9]>
+        <html class="lt-ie9">
+          <div style="clear: both; text-align:center; position: relative;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="/assets/images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/></a></div>
+        </html>
+        <script src="/assets/js/html5shiv.js"></script>
+  <![endif]-->
+
+  {% seo %}
+</head>
+
+<body>
+  <div class="page">
+    <!--
+      ========================================================
+                                                        CONTENT
+      ========================================================
+      -->
+    {{ content }}
+    <footer>
+      <section class="well-1">
+        <div class="container">
+          <div class="copyright">DCRM © 2005 - <span id="copyright-year"></span> All Rights Reserved | <a
+                  href="{{ site.github.repository_url }}" target="_blank" class="btn btn-github"><span
+                  class="icon"></span>Crimson.GitHub</a></div>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script src="{{ '/assets/js/script.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
+</html>

@@ -1,0 +1,16 @@
+---
+layout: hacker
+---
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+{{content}}
+{% if page.tags %}
+<small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
+<script>document.getElementById('a-title').href = "/blog#" + "{{ page.id }}";</script>
+<script src="https://utteranc.es/client.js"
+        repo="william-aqn/blog"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
