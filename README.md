@@ -1,2 +1,2 @@
 # blog
-Материалы тут [https://x-crm.info/](/_posts/)
+Материалы тут [https://github.com/william-aqn/blog](/_posts/)
